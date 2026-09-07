@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Pujan",
+    "account_number": 1001,
+    "balance": 6000,
+    "transaction": [
+      "Deposite: Rs.10000",
+      "Transfer, withdrwan:4000"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hari Joshi",
+    "account_number": 1002,
+    "balance": 4000,
+    "transaction": [
+      "Transfer, deposited:4000"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Srijan Upadhyay",
+    "account_number": 1003,
+    "balance": 0,
+    "transaction": []
+  },
+  {
+    "id": 4,
+    "name": "Krishna B.K",
+    "account_number": 1004,
+    "balance": 0,
+    "transaction": []
+  }
+]

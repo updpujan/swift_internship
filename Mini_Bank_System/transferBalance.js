@@ -1,5 +1,6 @@
 import { rl,menuinput } from "./app.js";
 import { accounts } from "./account.js";
+import { saveData } from "./fileService.js";
 
  const tran = {
         sender,
@@ -44,7 +45,7 @@ function receiver(){
 
 
 function transferAmount(){
-    rl.question("Enter transfer amount ",(amount)=>{
+    rl.question("Enter transfer amount ",async (amount)=>{
         try{
             if(!Number(amount)) throw new Error("Invalid Input");
             amount = Number(amount);
@@ -55,6 +56,7 @@ function transferAmount(){
             accounts[tran.sender].transaction.push(`Transfer, withdrwan:${amount}`);
             accounts[tran.receiver].balance += tran.amount;
             accounts[tran.receiver].transaction.push(`Transfer, deposited:${amount}`);
+            await saveData(accounts);
             console.log("Balance trnasfered Sucessfully");
             menuinput();
 
