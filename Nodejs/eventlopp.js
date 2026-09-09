@@ -1,5 +1,5 @@
 //task1
-/*
+
 console.log("A");
 setTimeout(()=>{
     console.log("B");
@@ -27,7 +27,6 @@ function three() {
 
 one();
 
-*/
 
 //task 3
 console.log("A");
@@ -43,3 +42,17 @@ setTimeout(() => {
 }, 0);
 
 console.log("E");
+
+
+
+console.log("1");
+setTimeout(()=>{
+    console.log("2");
+},5000);
+
+setTimeout(()=>{
+    console.log("3");
+},3000);
+
+
+module.exports = three;
